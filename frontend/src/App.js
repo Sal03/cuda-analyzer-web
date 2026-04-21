@@ -72,7 +72,7 @@ function SampleCard({ sample, index }) {
 
   return (
     <div className={`sample-card ${open ? "open" : ""}`} style={{ animationDelay: `${index * 30}ms` }}>
-      <div className="sample-card-header" onClick={() => setOpen(!o => !o)}>
+      <div className="sample-card-header" onClick={() => setOpen(o => !o)}>
         <span className="sample-card-name">{sample.sample_name}</span>
         <div className="sample-card-right">
           <div className="sample-cat-pills">
